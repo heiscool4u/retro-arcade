@@ -8,6 +8,8 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="블록 쌓기 | 추억의 오락실">
 <meta property="og:description" content="10줄마다 빨라지는 무한 모드, 바닥에 블록이 깔린 스테이지 모드. PC·모바일 모두 됩니다.">
+<meta property="og:url" content="https://heiscool4u.github.io/retro-arcade/games/01-block-stack/">
+<meta property="og:image" content="https://heiscool4u.github.io/retro-arcade/games/01-block-stack/og.png">
 <meta name="theme-color" content="#0a0c18">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/galmuri@2.40.3/dist/galmuri.css">
 <style>
@@ -28,6 +30,8 @@ button{touch-action:manipulation}
 header{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .logo{font-size:13px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .logo b{color:var(--yellow);font-weight:400}
+.logo .home{color:inherit;text-decoration:none}
+.logo .home:hover{color:var(--ink);text-decoration:underline}
 .tb{display:flex;gap:6px}
 .icon{font:inherit;font-size:12px;min-width:44px;height:30px;color:var(--ink);background:var(--bezel);
   border:2px solid var(--line);border-radius:4px;cursor:pointer}
@@ -85,7 +89,7 @@ body.touch .help{display:none}
 <body>
 <div id="app">
   <header id="hdr">
-    <div class="logo"><b>BLOCK STACK</b> · 추억의 오락실</div>
+    <div class="logo"><b>BLOCK STACK</b> · <a href="../../" class="home">추억의 오락실</a></div>
     <div class="tb">
       <button class="icon" id="btnPause" title="일시정지 (P)">II</button>
       <button class="icon" id="btnMute" title="소리 켜기/끄기 (M)" aria-pressed="false">♪</button>
