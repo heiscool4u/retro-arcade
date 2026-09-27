@@ -21,9 +21,15 @@
 ## 게임 목록
 | # | 게임 | 상태 |
 |---|---|---|
-| 01 | 블록 쌓기 (테트리스류) | 테스트판 완성, 마스터님 피드백 대기 |
+| 01 | 블록 쌓기 (테트리스류) | 배포됨, 마스터님 피드백 대기 |
+
+## 배포 (2026-09-27 확정)
+- 저장소: https://github.com/heiscool4u/retro-arcade (공개), GitHub Pages `main` 브랜치 루트
+- 사이트: https://heiscool4u.github.io/retro-arcade/ → 첫 화면에 게임 목록(`index.html`)
+- 새 게임을 추가하는 순서: `games/NN-이름/index.html` 작성 → `og.png`(1200×630, 네이버 링크 카드 썸네일) →
+  첫 화면에 카드 추가 → `python3 tools/smoke.py <URL>` → push → 배포 주소로 smoke 한 번 더
+- 블로그는 네이버 그대로 둔다. 글 = 플레이 GIF + 추억 이야기 + 조작법 + 링크 카드
 
 ## 미정 (마스터님 결정 필요)
-- 호스팅: GitHub Pages(무료, 공개 저장소 필요) 추천 / 대안 Vercel
 - 주간 자동화 방식: 테스트 게임 피드백을 반영한 뒤 결정
 - 초기 3~6편 목록
